@@ -1,0 +1,13 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+	&__title {
+		font-weight: 600;
+		color: var(--title-color);
+	}
+}
+/*=============== LAYOUT ===============*/
+.container {
+	width: 1140px;
+	max-width: calc(100% - 48px);
+	margin: 0 auto;
+}

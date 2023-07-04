@@ -1,0 +1,94 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@500;800&family=Sonsie+One&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 8.5rem;
+  /*========== Colors ==========*/
+  --primary-color-black: #152427;
+  --primary-color-green-black: #143c3c;
+  --scolders-color-green: #83a17d;
+  --scolders-color-gray: #6a8383;
+  --scolders-color-light-green: #e2eddf;
+  --text-color-black-gray: #575d5e;
+  --text-color-light-gray: #7d8188;
+  --text-color-white: #ffffff;
+  --body-color: #ffffff;
+  --scroll-bar-color: #dadad7;
+  --scroll-thumb-color: #c2c1bd;
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 5rem;
+  --h2-font-size: 4.2rem;
+  --h3-big-font-size: 2.2rem;
+  --h3-normal-font-size: 2rem;
+  --h3-small-font-size: 1.8rem;
+  --normal-font-size: 1.8rem;
+  --small-font-size: 1.6rem;
+  --smaller-font-size: 1.4rem;
+}
+
+/*=============== BASE ===============*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  background-color: var(--body-color);
+  color: var(--text-color-light-gray);
+  transition: 0.5s;
+}
+
+h1 {
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color-black);
+}
+
+h2 {
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  font-family: inherit;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section__title {
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+/*=============== LAYOUT ===============*/
+.container {
+  width: 1140px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

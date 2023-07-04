@@ -1,0 +1,44 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@500;800&family=Sonsie+One&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+	--header-height: 8.5rem;
+
+	/*========== Colors ==========*/
+	--primary-color-black: #152427;
+	--primary-color-green-black: #143c3c;
+	--scolders-color-green: #83a17d;
+	--scolders-color-gray: #6a8383;
+	--scolders-color-light-green: #e2eddf;
+	--text-color-black-gray: #575d5e;
+	--text-color-light-gray: #7d8188;
+	--text-color-white: #ffffff;
+	--body-color: #ffffff;
+
+	--scroll-bar-color: #dadad7;
+	--scroll-thumb-color: #c2c1bd;
+
+	/*========== Font and typography ==========*/
+	--body-font: "Poppins", sans-serif;
+
+	--biggest-font-size: 5rem;
+	--h2-font-size: 4.2rem;
+	--h3-big-font-size: 2.2rem;
+	--h3-normal-font-size: 2rem;
+	--h3-small-font-size: 1.8rem;
+	--normal-font-size: 1.8rem;
+	--small-font-size: 1.6rem;
+	--smaller-font-size: 1.4rem;
+
+	//Responsive typography
+	// @media screen and (max-width: 967.98px) {
+	// --biggest-font-size: 3rem;
+	// --h2-font-size: 3rem;
+	// --h3-big-font-size: 1.8rem;
+	// --h3-small-font-size: 1.6rem;
+	// --normal-font-size: 1.4rem;
+	// --small-font-size: 1.4rem;
+	// --smaller-font-size: 1.2rem;
+	// }
+    
+}

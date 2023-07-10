@@ -76,8 +76,7 @@
 	}
 	.feature {
 		&__video {
-			background: #000;
-			background: url(../../img/feature-video.jpg) center / cover no-repeat;
+			background: url(/assets/img/feature-video.jpg) center / cover no-repeat;
 			width: 100%;
 		}
 	}

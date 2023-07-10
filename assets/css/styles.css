@@ -197,14 +197,6 @@ button {
 .control__btn::after {
   display: none;
 }
-.control__btn:first-child {
-  position: absolute;
-  left: -64px;
-}
-.control__btn:last-child {
-  position: absolute;
-  right: -64px;
-}
 
 /*=============== CUSTOM SWIPER ===============*/
 .swiper-button-next .control__next-icon,
@@ -1270,6 +1262,14 @@ button {
 @media screen and (min-width: 992px) {
   .service-top__mobile {
     display: none;
+  }
+  .control__btn:first-child {
+    position: absolute;
+    left: -64px;
+  }
+  .control__btn:last-child {
+    position: absolute;
+    right: -64px;
   }
 }
 /* Tablet & mobile */

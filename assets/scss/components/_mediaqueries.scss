@@ -4,6 +4,16 @@
 	.service-top__mobile {
 		display: none;
 	}
+	.control__btn {
+		&:first-child {
+			position: absolute;
+			left: -64px;
+		}
+		&:last-child {
+			position: absolute;
+			right: -64px;
+		}
+	}
 }
 /* Tablet & mobile */
 @media screen and (max-width: 991.98px) {

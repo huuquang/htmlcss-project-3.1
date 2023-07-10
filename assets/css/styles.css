@@ -1329,6 +1329,7 @@ button {
     top: calc(var(--header-height) + 1.6rem);
   }
   .feature__video {
+    background: #000;
     background: url(../../img/feature-video.jpg) center/cover no-repeat;
     width: 100%;
   }

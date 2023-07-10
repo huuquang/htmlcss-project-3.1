@@ -879,6 +879,7 @@ button {
 }
 .feature__video {
   border-radius: 22px;
+  cursor: pointer;
 }
 .feature__btn {
   display: flex;
@@ -892,7 +893,7 @@ button {
   z-index: 2;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  transition: 0.25s linear;
+  transition: 0.4s linear;
 }
 .feature__btn::after {
   content: "";

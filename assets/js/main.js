@@ -116,11 +116,11 @@ function togglePlayPause() {
 }
 /*=============== SWIPER SERVICE ===============*/
 var swiper = new Swiper(".swiper", {
-	// autoplay: {
-	// 	delay: 1500,
-	// 	disableOnInteraction: false,
-	// 	pauseOnMouseEnter: true,
-	// },
+	autoplay: {
+		delay: 1500,
+		disableOnInteraction: false,
+		pauseOnMouseEnter: true,
+	},
 	keyboardcontrol: true,
 	loop: true,
 	rewind: true,

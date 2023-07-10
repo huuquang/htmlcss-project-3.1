@@ -1,0 +1,111 @@
+/*=============== BLOG ===============*/
+.blog {
+	padding: 100px 0 102px;
+	&__data {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__header {
+		max-width: 583px;
+		flex-shrink: 0;
+	}
+	&__title {
+		margin-top: 10px;
+		font-size: var(--h2-font-size);
+		font-weight: 600;
+	}
+	&__line {
+		width: 82px;
+		height: 3px;
+	}
+	&__desc {
+		margin-right: 10px;
+		max-width: 409px;
+		font-size: var(--small-font-size);
+		line-height: 1.625;
+	}
+	.blog-list {
+		--columns: 3;
+		--spacing: 30px;
+		margin-top: 90px;
+		display: grid;
+		grid-template-columns: repeat(var(--columns), 1fr);
+		gap: var(--spacing);
+	}
+	.blog-item {
+		display: flex;
+		flex-direction: column;
+		border-radius: 40px 40px 20px 20px;
+		overflow: hidden;
+		transition: all 0.25s ease-in;
+		cursor: pointer;
+		&:hover {
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			& .blog-item__content {
+				padding: 0 30px;
+			}
+			& .blog-item__thumb {
+				transform: scale(1.1);
+			}
+		}
+		&__image {
+			overflow: hidden;
+			height: 317px;
+		}
+		&__thumb {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transform: scale(1);
+			transition: 0.25s ease-in-out;
+			flex-shrink: 0;
+		}
+		&__content {
+			display: flex;
+			flex-direction: column;
+			transition: all 0.25s ease-in;
+			flex: 1;
+			overflow: hidden;
+		}
+		&__top {
+			padding: 26px 0 9px;
+		}
+		&__btn {
+			display: block;
+			padding: 7px 34px;
+			margin-bottom: 13px;
+			width: 107px;
+			height: 26px;
+			border-radius: 20px;
+			background: var(--secondery-color-green);
+			color: #000;
+			font-size: 1rem;
+			transition: all 0.25s ease-in;
+			&:hover {
+				background: var(--primary-color-green-black);
+				color: var(--secondery-color-light-green);
+			}
+		}
+		&__subtitle {
+			min-height: 90px;
+			font-size: var(--h3-small-font-size);
+			font-weight: 600;
+			line-height: 1.6;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			word-break: break-word;
+		}
+		&__date {
+			margin-top: auto;
+			border-top: 1px solid #c4c4c4;
+			padding: 16px 12px;
+			color: var(--text-color-black-gray);
+			font-size: 1rem;
+			text-align: right;
+		}
+	}
+}

@@ -76,6 +76,11 @@
 		<meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#ffffff" />
 		<!--#endregion =============== FAVICON ===============-->
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
 
 		<!--=============== BOXICONS ===============-->
 		<link
@@ -96,7 +101,10 @@
 				<nav class="nav__menu" id="nav-menu">
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a href="#home" class="nav__link">Home</a>
+							<a href="#home" class="nav__link active-link">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="#service" class="nav__link">Service</a>
 						</li>
 						<li class="nav__item">
 							<a href="#about" class="nav__link">About</a>
@@ -109,22 +117,691 @@
 						</li>
 					</ul>
 				</nav>
-				<button class="button header__btn">Sign Up</button>
+				<a href="#!" class="button header__btn">Sign Up</a>
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="bx bx-menu nav__toggle-menu"></i>
+					<i class="bx bx-x nav__toggle-close"></i>
+				</div>
 			</div>
 		</header>
 		<main class="main">
 			<!--=============== HERO ===============-->
-
-			<!--=============== LOGO ===============-->
+			<section class="hero" id="home">
+				<div class="hero__container container">
+					<div class="hero__data">
+						<h1 class="hero__title section__title">We’re a creative design agency.</h1>
+						<p class="hero__desc">
+							A brilliant, modular agency template for startup’s build yours toady.
+						</p>
+						<div class="hero__actions">
+							<a href="#!" class="button hero__actions--btn">Get in touch</a>
+							<div class="hero-play">
+								<div class="hero-play__wrapper">
+									<div class="hero-play__circle">
+										<svg
+											class="hero-play__icon"
+											width="8"
+											height="10"
+											viewBox="0 0 8 10"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.48979 4.22586C8.15106 4.61996 8.13773 5.58212 7.4658 5.95775L1.49682 9.29454C0.824886 9.67017 -0.00170367 9.17755 0.00896126 8.40782L0.103701 1.57014C0.114366 0.800411 0.954285 0.330875 1.61555 0.724974L7.48979 4.22586Z"
+												fill="currentColor"
+											/>
+										</svg>
+									</div>
+								</div>
+								<span class="hero-play__text">Watch Video</span>
+							</div>
+						</div>
+					</div>
+					<div class="hero__media">
+						<div class="hero__overlay">
+							<img src="./assets/icon/flower.svg" alt="" class="hero__line" />
+							<img src="./assets/icon/line.svg" alt="" class="hero__line" />
+							<img src="./assets/icon/flower.svg" alt="" class="hero__line" />
+							<img src="./assets/icon/line.svg" alt="" class="hero__line" />
+						</div>
+						<figure class="hero__images">
+							<img src="./assets/img/hero-01.jpg" alt="" class="hero__images-item" />
+							<img src="./assets/img/hero-02.jpg" alt="" class="hero__images-item" />
+							<img src="./assets/img/hero-03.jpg" alt="" class="hero__images-item" />
+						</figure>
+					</div>
+				</div>
+			</section>
+			<!--=============== BRAND ===============-->
+			<section class="section brand">
+				<div class="brand__container container">
+					<ul class="brand__list">
+						<li class="brand__item">
+							<span class="brand__name">Google</span>
+						</li>
+						<li class="brand__item">
+							<img
+								src="./assets/icon/slack-logo.svg"
+								alt=""
+								class="brand__icon brand__icon"
+							/>
+							<span class="brand__name">slack</span>
+						</li>
+						<li class="brand__item">
+							<img src="./assets/icon/agword-logo.svg" alt="" class="brand__icon" />
+							<span class="brand__name">Agworld</span>
+						</li>
+						<li class="brand__item">
+							<span class="brand__name">RioTinto</span>
+						</li>
+						<li class="brand__item">
+							<img src="./assets/icon/heroku-logo.svg" alt="" class="brand__icon" />
+							<span class="brand__name">HEROKU</span>
+						</li>
+					</ul>
+				</div>
+			</section>
 			<!--=============== SERVICE ===============-->
+			<section class="service" id="service">
+				<div class="service__container container">
+					<div class="service-top__mobile">
+						<div class="service-top__data">
+							<h4 class="section__subtitle">OUR SERVICES</h4>
+							<h2 class="service-top__title section__title">
+								We offer a wide range of design services
+								<span class="section__line"></span>
+							</h2>
+						</div>
+					</div>
+					<div class="service__content swiper mySwiper">
+						<div class="service-top__pc">
+							<div class="service-top__data">
+								<h4 class="section__subtitle">OUR SERVICES</h4>
+								<h2 class="service-top__title section__title">
+									We offer a wide range of design services
+									<span class="section__line"></span>
+								</h2>
+							</div>
+						</div>
+						<div class="service-control control">
+							<button class="control__btn swiper-button-prev">
+								<svg
+									class="control__prev-icon"
+									width="22"
+									height="13"
+									viewBox="0 0 22 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+							<button class="control__btn swiper-button-next">
+								<svg
+									class="control__next-icon"
+									width="22"
+									height="12"
+									viewBox="0 0 22 12"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 6.29412H21M21 6.29412L15.7059 1M21 6.29412L15.7059 11"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+						<div class="service-card swiper-wrapper">
+							<!--========== Service content 1 ==========-->
+							<div class="service-card__content swiper-slide">
+								<figure>
+									<img
+										src="./assets/img/service-01.jpg"
+										alt="Branding"
+										class="service-card__thumb"
+									/>
+								</figure>
+								<div class="service-card__data">
+									<h3 class="service-card__title">Branding</h3>
+									<p class="service-card__desc">
+										Create beautiful Agency website with Boluethat converts more visitors
+										than any website.
+									</p>
+								</div>
+							</div>
+							<!--========== Service content 2 ==========-->
+							<div class="service-card__content swiper-slide">
+								<figure>
+									<img
+										src="./assets/img/service-02.jpg"
+										alt="Web Design"
+										class="service-card__thumb"
+									/>
+								</figure>
+								<div class="service-card__data">
+									<h3 class="service-card__title">Web Design</h3>
+									<p class="service-card__desc">
+										Create beautiful Agency website with Boluethat converts more visitors
+										than any website.
+									</p>
+								</div>
+							</div>
+							<!--========== Service content 3 ==========-->
+							<div class="service-card__content swiper-slide">
+								<figure>
+									<img
+										src="./assets/img/service-03.jpg"
+										alt="Graphic Design"
+										class="service-card__thumb"
+									/>
+								</figure>
+								<div class="service-card__data">
+									<h3 class="service-card__title">Graphic Design</h3>
+									<p class="service-card__desc">
+										Create beautiful Agency website with Boluethat converts more visitors
+										than any website.
+									</p>
+								</div>
+							</div>
+							<!--========== Service content 1 ==========-->
+							<div class="service-card__content swiper-slide">
+								<figure>
+									<img
+										src="./assets/img/service-01.jpg"
+										alt="Branding"
+										class="service-card__thumb"
+									/>
+								</figure>
+								<div class="service-card__data">
+									<h3 class="service-card__title">Branding</h3>
+									<p class="service-card__desc">
+										Create beautiful Agency website with Boluethat converts more visitors
+										than any website.
+									</p>
+								</div>
+							</div>
+							<!--========== Service content 2 ==========-->
+							<div class="service-card__content swiper-slide">
+								<figure>
+									<img
+										src="./assets/img/service-02.jpg"
+										alt="Web Design"
+										class="service-card__thumb"
+									/>
+								</figure>
+								<div class="service-card__data">
+									<h3 class="service-card__title">Web Design</h3>
+									<p class="service-card__desc">
+										Create beautiful Agency website with Boluethat converts more visitors
+										than any website.
+									</p>
+								</div>
+							</div>
+							<!--========== Service content 3 ==========-->
+							<div class="service-card__content swiper-slide">
+								<figure>
+									<img
+										src="./assets/img/service-03.jpg"
+										alt="Graphic Design"
+										class="service-card__thumb"
+									/>
+								</figure>
+								<div class="service-card__data">
+									<h3 class="service-card__title">Graphic Design</h3>
+									<p class="service-card__desc">
+										Create beautiful Agency website with Boluethat converts more visitors
+										than any website.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<!--=============== ABOUT ===============-->
+			<section class="about" id="about">
+				<div class="about__container container">
+					<div class="about__media">
+						<div class="about__overlay">
+							<img src="./assets/icon/flower.svg" alt="" class="about__line" />
+							<img src="./assets/icon/line.svg" alt="" class="about__line" />
+						</div>
+						<div class="about__images">
+							<img src="./assets/img/about-01.jpg" alt="" class="about__images-item" />
+							<img src="./assets/img/about-02.jpg" alt="" class="about__images-item" />
+						</div>
+						<div class="about-aside">
+							<h4 class="about-aside__title">All Desingners</h4>
+							<p class="about-aside__desc">Total Balance</p>
+							<div class="about-aside__percent">40%</div>
+							<div class="about-aside__time-line"></div>
+							<div class="about-aside__status">Loading...</div>
+							<div class="about-aside__circle"></div>
+							<div class="about-aside__team">
+								<span class="about-aside__text">Teams:</span>
+								<div class="about-aside__user">
+									<ul class="about-aside__user-list">
+										<li class="about-aside__user-item">
+											<img
+												src="./assets/img/about-user-01.jpg"
+												alt=""
+												class="about-aside__user-img"
+											/>
+										</li>
+										<li class="about-aside__user-item">
+											<img
+												src="./assets/img/about-user-02.jpg"
+												alt=""
+												class="about-aside__user-img"
+											/>
+										</li>
+										<li class="about-aside__user-item">
+											<img
+												src="./assets/img/about-user-03.jpg"
+												alt=""
+												class="about-aside__user-img"
+											/>
+										</li>
+										<li class="about-aside__user-item">
+											<img
+												src="./assets/img/about-user-04.jpg"
+												alt=""
+												class="about-aside__user-img"
+											/>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="about__data">
+						<h4 class="section__subtitle">ABOUT US</h4>
+						<h2 class="about__title section__title">
+							We are an extention of your creative team
+						</h2>
+						<p class="about__desc">
+							At the start of every project, we cusomizea detailed project plan together
+							with you set exectationns ensure alighment and define key milestones and
+							deiverbles.
+						</p>
+						<ul class="about__list">
+							<li class="about__item">
+								<span class="about__percent">48%</span>
+								<p class="about__sub-desc">
+									Are you strive for two things in design simplicity and clarity. Great
+									design is born of those two things
+								</p>
+							</li>
+							<li class="about__item">
+								<span class="about__percent">26%</span>
+								<p class="about__sub-desc">
+									Are you strive for two things in design simplicity and clarity. Great
+									design is born of those two things
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 			<!--=============== PROCCESS ===============-->
-			<!--=============== FEATURES ===============-->
+			<section class="process">
+				<div class="process__container container">
+					<h4 class="section__subtitle">OUR PROCESS</h4>
+					<h2 class="process__title section__tile">
+						A simple ,yet effective three step process
+						<span class="section__line"></span>
+					</h2>
+					<ul class="process__list">
+						<!--========= process item 1 =========-->
+						<li class="process-item">
+							<div class="process-item__holder">
+								<span class="process-item__number">01.</span>
+								<div class="process-item__content">
+									<h3 class="process-item__heading">Project idea</h3>
+									<a href="#!" class="process-item__more">Learn More</a>
+								</div>
+							</div>
+
+							<figure class="process-item__image">
+								<img
+									src="./assets/img/process-img.png"
+									alt=""
+									class="process-item__image-img"
+								/>
+							</figure>
+						</li>
+						<!--========= process item 2 =========-->
+						<li class="process-item">
+							<div class="process-item__holder">
+								<span class="process-item__number">02.</span>
+								<div class="process-item__content">
+									<h3 class="process-item__heading">Brainstormaing</h3>
+									<a href="#!" class="process-item__more">Learn More</a>
+								</div>
+							</div>
+							<p class="process-item__desc">
+								We customse a ensure aligment and difine key mileones and defiverables
+								experience tells us the best solutions are the ones deated with clients.
+							</p>
+						</li>
+						<!--========= process item 3 =========-->
+						<li class="process-item">
+							<div class="process-item__holder">
+								<span class="process-item__number">03.</span>
+								<div class="process-item__content">
+									<h3 class="process-item__heading">Execution</h3>
+									<a href="#!" class="process-item__more">Learn More</a>
+								</div>
+							</div>
+							<p class="process-item__desc">
+								We customse a ensure aligment and difine key mileones and defiverables
+								experience tells us the best solutions are the ones deated with clients.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!--=============== FEATURE ===============-->
+			<section class="feature">
+				<div class="feature__container container">
+					<div class="feature__data">
+						<h2 class="feature__title section__tile">
+							A quick glance of our past projects
+							<span class="section__line section__line--green"></span>
+						</h2>
+						<div class="feature__description">
+							<p class="feature__desc">
+								Are you strive for the fast project simplicity and clarity. Great design
+								is born of those two things.
+							</p>
+							<a href="#!" class="feature__view-all"
+								>Browse all Projects
+								<svg
+									class="feature__arrow-right"
+									width="22"
+									height="12"
+									viewBox="0 0 22 12"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 6.29415H21M21 6.29415L15.7059 1.00003M21 6.29415L15.7059 11"
+										stroke="#80A07B"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="feature__media" id="videoContainer">
+						<div class="feature__overlay">
+							<img src="./assets/icon/flower.svg" alt="" class="feature__line" />
+							<img src="./assets/icon/line-2.svg" alt="" class="feature__line" />
+						</div>
+						<video
+							class="feature__video"
+							id="video"
+							src="./assets/audio/feature.mp4"
+							width="100%"
+							height="auto"
+							controls
+							preload
+							onloadeddata="showThumbnail()"
+						></video>
+						<div class="feature__button" id="showHideButton">
+							<i class="feature__btn bx bx-play" id="playPauseButton"></i>
+						</div>
+					</div>
+				</div>
+			</section>
 			<!--=============== TESTIMONIAL ===============-->
+			<section class="testimonial" id="blog">
+				<div class="testimonial__container container">
+					<h2 class="testimonial__title section__title">
+						Share the features that help your customers
+					</h2>
+					<p class="testimonial__desc">
+						You already know that the customer experience doesn't end with a sale — it's
+						an ongoing work in progress that companies should be constantly seeking to
+						improve and iterate on.
+					</p>
+					<ul class="testimonial__list">
+						<!--======== Item 1 ========-->
+						<li class="testimonial-item">
+							<img
+								class="testimonial-item__icon"
+								src="./assets/icon/blog-icon.svg"
+								alt="Blog"
+							/>
+							<h3 class="testimonial-item__title">Blog</h3>
+							<p class="testimonial-item__desc">
+								We’ve researched numerous agencies and complied a list of digital
+								marketing agency blogs you should read to stay ahead of your rivals and
+								succeed online!
+							</p>
+						</li>
+						<!--======== Item 2 ========-->
+						<li class="testimonial-item">
+							<img
+								class="testimonial-item__icon"
+								src="./assets/icon/documention-icon.svg"
+								alt="Documention"
+							/>
+							<h3 class="testimonial-item__title">Documention</h3>
+							<p class="testimonial-item__desc">
+								In this article, we discuss the different types of documentation, what
+								makes for great technical documentation, and provide examples.
+							</p>
+						</li>
+						<!--======== Item 3 ========-->
+						<li class="testimonial-item">
+							<img
+								class="testimonial-item__icon"
+								src="./assets/icon/customer-icon.svg"
+								alt="Customers"
+							/>
+							<h3 class="testimonial-item__title">Customers</h3>
+							<p class="testimonial-item__desc">
+								Your customers have high expectations — and if your business can't meet
+								them, they're going to leave you for your competitors.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
 			<!--=============== BLOG ===============-->
+			<section class="blog" id="contact">
+				<div class="blog__container container">
+					<div class="blog__data">
+						<div class="blog__header">
+							<h4 class="section__subtitle">BLOG & ARTICLES</h4>
+							<h2 class="blog__title section__tile">
+								Take a look at our latest articles and resources
+								<span class="blog__line section__line"></span>
+							</h2>
+						</div>
+						<p class="blog__desc">
+							The best agency are the ones ideated with clients. we corporate your ideas
+							with memorable
+						</p>
+					</div>
+					<div class="blog-list">
+						<!--======== Item 1 ========-->
+						<div class="blog-item">
+							<div class="blog-item__image">
+								<img
+									src="./assets/img/blog-01.jpg"
+									alt="STORIES"
+									class="blog-item__thumb"
+								/>
+							</div>
+							<div class="blog-item__content">
+								<div class="blog-item__top">
+									<a href="#!" class="blog-item__btn">STORIES</a>
+									<h3 class="blog-item__subtitle">
+										What did we learn from nunning over 100 design sprints in less the
+										year?
+									</h3>
+								</div>
+								<span class="blog-item__date">JANUARY 29, 2022</span>
+							</div>
+						</div>
+						<!--======== Item 2 ========-->
+						<div class="blog-item">
+							<div class="blog-item__image">
+								<img
+									src="./assets/img/blog-02.jpg"
+									alt="STORIES"
+									class="blog-item__thumb"
+								/>
+							</div>
+							<div class="blog-item__content">
+								<div class="blog-item__top">
+									<a href="#!" class="blog-item__btn">STORIES</a>
+									<h3 class="blog-item__subtitle">
+										The difference between the UI/UX design a simple guide for beginner’s
+									</h3>
+								</div>
+								<span class="blog-item__date">JANUARY 29, 2022</span>
+							</div>
+						</div>
+						<!--======== Item 3 ========-->
+						<div class="blog-item">
+							<div class="blog-item__image">
+								<img
+									src="./assets/img/blog-03.jpg"
+									alt="STORIES"
+									class="blog-item__thumb"
+								/>
+							</div>
+
+							<div class="blog-item__content">
+								<div class="blog-item__top">
+									<a href="#!" class="blog-item__btn">STORIES</a>
+									<h3 class="blog-item__subtitle">
+										How marketing can help your business more than anything.
+									</h3>
+								</div>
+								<span class="blog-item__date">JANUARY 29, 2022</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<!--=============== FOOTER ===============-->
-		<footer class="footer"></footer>
+		<footer class="footer" id="contact">
+			<div class="footer__container container">
+				<div class="footer__contact">
+					<h2 class="footer__heading">Sign up for our newsletter</h2>
+					<form action="" class="footer__form">
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Enter your email"
+							class="footer__input"
+						/>
+						<button class="footer__arrow-left">
+							<svg
+								width="28"
+								height="18"
+								viewBox="0 0 28 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1 9H27M27 9L18.3333 1M27 9L18.3333 17"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</form>
+					<ul class="footer-social">
+						<li class="footer-social__item">
+							<a href="#!" class="footer-social__link">
+								<i class="bx bxl-facebook"></i
+							></a>
+						</li>
+						<li class="footer-social__item">
+							<a href="#!" class="footer-social__link">
+								<i class="bx bxl-instagram"></i>
+							</a>
+						</li>
+						<li class="footer-social__item">
+							<a href="#!" class="footer-social__link">
+								<i class="bx bxl-twitter"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__content">
+					<!--======== footer inner 1 ========-->
+					<div class="footer__inner">
+						<h3 class="footer__title">Pages</h3>
+						<ul class="footer__links">
+							<li><a class="footer__link" href="#">Home</a></li>
+							<li><a class="footer__link" href="#">About</a></li>
+							<li><a class="footer__link" href="#">Blog</a></li>
+							<li><a class="footer__link" href="#">Blog Post</a></li>
+						</ul>
+					</div>
+					<!--======== footer inner 2 ========-->
+					<div class="footer__inner">
+						<h3 class="footer__title">Product</h3>
+						<ul class="footer__links">
+							<li><a class="footer__link" href="#">Home</a></li>
+							<li><a class="footer__link" href="#">About</a></li>
+							<li><a class="footer__link" href="#">Blog</a></li>
+							<li><a class="footer__link" href="#">Blog Post</a></li>
+						</ul>
+					</div>
+					<!--======== footer inner 3 ========-->
+					<div class="footer__inner">
+						<h3 class="footer__title">Overview</h3>
+						<ul class="footer__links">
+							<li><a class="footer__link" href="#">Home1</a></li>
+							<li><a class="footer__link" href="#">Home2</a></li>
+							<li><a class="footer__link" href="#">Home3</a></li>
+							<li><a class="footer__link" href="#">Pricing1</a></li>
+						</ul>
+					</div>
+					<!--======== footer inner 4 ========-->
+					<div class="footer__inner">
+						<h3 class="footer__title">About us</h3>
+						<ul class="footer__links">
+							<li><a class="footer__link" href="#">Team</a></li>
+							<li><a class="footer__link" href="#">Investors</a></li>
+							<li><a class="footer__link" href="#">Blog</a></li>
+							<li><a class="footer__link" href="#">Press</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">© Modulars. All right reserved</div>
+		</footer>
+		<!--=============== SCROLL UP ===============-->
+		<a href="#" class="scrollup" id="scroll-up">
+			<i class="bx bx-up-arrow-alt scrollup__icon"></i>
+		</a>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 		<!--=============== MAIN JS ===============-->
 		<script src="assets/js/main.js"></script>
 	</body>

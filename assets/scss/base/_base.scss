@@ -14,7 +14,7 @@ html {
 
 body {
 	// margin: var(--header-height) 0 0 0 ;
-	font-family: var(--body-font);
+	font-family: var(--primary-font);
 	font-size: var(--normal-font-size);
 	font-weight: 500;
 	background-color: var(--body-color);
@@ -27,7 +27,8 @@ h1 {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	color: var(--primary-color-black);
 }
 h2 {

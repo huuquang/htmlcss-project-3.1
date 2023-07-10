@@ -1,0 +1,79 @@
+/*=============== SERVICE ===============*/
+.service {
+	margin-top: 6px;
+	padding-top: 100px;
+}
+.service-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	&__data {
+		max-width: 520px;
+	}
+	&__title {
+		margin-top: 12px;
+		font-size: var(--h2-font-size);
+		font-weight: 600;
+	}
+	&__control {
+		margin: 0 73px 9px 0;
+	}
+}
+.service-card {
+	margin-top: 76px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	// column-gap: 16px;
+	justify-items: center;
+	padding-bottom: 49px;
+	&__content {
+		width: 100%;
+		cursor: pointer;
+		transition: 0.3s ease;
+		overflow: hidden;
+
+		&:hover {
+			box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+			border-radius: 0 0 20px 20px;
+			background: var(--body-color) #fff;
+		}
+		&:hover .service-card__data {
+			padding-left: 18px;
+		}
+		&:hover .service-card__thumb {
+			opacity: 1;
+			animation: flash 1.5s;
+		}
+	}
+	&__thumb {
+		display: block;
+		width: 100%;
+		height: 318px;
+		object-fit: cover;
+		border-radius: 20px 20px 0px 0px;
+	}
+	&__data {
+		padding: 24px 0;
+		background: var(--body-color);
+		transition: 0.3s linear;
+	}
+	&__title {
+		font-size: var(--h3-big-font-size);
+		font-weight: 600;
+		line-height: 1;
+	}
+	&__desc {
+		margin-top: 18px;
+		max-width: 268px;
+		font-size: var(--smaller-font-size);
+		line-height: 1.71;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,60 @@
+/*=============== BUTTONS ===============*/
+.button {
+	--height: 57px;
+	display: inline-block;
+	min-width: 173px;
+	padding: 0 16px;
+	height: var(--height);
+	border-radius: 99px;
+	border: 1.5px solid var(--primary-color-green-black);
+	background: var(--primary-color-green-black);
+	color: var(--text-color-white);
+	cursor: pointer;
+	font-size: var(--normal-font-size);
+	font-family: var(--scondery-font);
+	line-height: var(--height);
+	text-align: center;
+	opacity: 1;
+	transition: 0.3s linear;
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+.control {
+	display: flex;
+	position: absolute;
+	top: 96px;
+	right: 138px;
+	z-index: 10;
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 54px;
+		height: 54px;
+		border-radius: 50%;
+		background: var(--secondery-color-light-green);
+		border: 1px solid var(--secondery-color-light-green);
+		color: var(--primary-color-black);
+		cursor: pointer;
+		transition: 0.3s linear;
+		&:hover {
+			background: var(--primary-color-black);
+			color: var(--body-color);
+		}
+		&::after {
+			display: none;
+		}
+	}
+	&.control__icon {
+	}
+}
+/*=============== CUSTOM SWIPER ===============*/
+.swiper-button-next .control__next-icon,
+.swiper-button-prev .control__prev-icon {
+	// display: none;
+	width: 50%;
+	height: 50%;
+	transform: rotate(180deg);
+}

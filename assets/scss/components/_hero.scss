@@ -1,0 +1,138 @@
+/*=============== HERO ===============*/
+.hero {
+	padding-top: 60px;
+	font-family: var(--secondery-font);
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__data {
+		margin-top: 43px;
+		width: 35%;
+	}
+	&__title {
+		max-width: 368px;
+		color: var(--primary-color-black);
+		font-size: var(--biggest-font-size);
+	}
+	&__desc {
+		margin-top: 20px;
+		color: var(--text-color-black-gray, #575d5e);
+		font-weight: 500;
+		line-height: 1.5;
+	}
+	&__actions {
+		margin-top: 42px;
+		display: flex;
+		align-items: center;
+		column-gap: 36px;
+	}
+	.hero-play {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 15px;
+		&:hover .hero-play__circle {
+			transform: rotate(225deg);
+		}
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// margin-left: 36px;
+			width: 44px;
+			height: 44px;
+			background-color: #83a17d;
+			border-radius: 50%;
+			cursor: pointer;
+			position: relative;
+			flex-shrink: 0;
+		}
+		&__circle {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 59px;
+			height: 59px;
+			background-color: transparent;
+			border: 5px solid var(--primary-color-green-black);
+			border-radius: 50%;
+			position: absolute;
+			border-top-color: transparent;
+			border-right-color: transparent;
+			transform: rotate(45deg);
+			transition: all 0.3s linear;
+		}
+		&__icon {
+			color: #fef6fb;
+			border-radius: 1px;
+			transform: rotate(-45deg);
+		}
+		&__text {
+			color: var(--primary-color-black);
+			font-family: var(--secondery-font);
+			font-weight: 600;
+			cursor: pointer;
+		}
+	}
+	&__media {
+		position: relative;
+	}
+	&__overlay {
+	}
+	&__line {
+		position: absolute;
+		z-index: 1;
+		&:first-child {
+			width: 72px;
+			top: -22px;
+			left: -210px;
+			z-index: 2;
+		}
+		&:nth-child(2) {
+			width: 545px;
+			top: -32px;
+			left: -172px;
+		}
+		&:nth-child(3) {
+			width: 72px;
+			bottom: -39px;
+			right: 0;
+			z-index: 2;
+		}
+		&:last-child {
+			width: 545px;
+			transform: rotate(175.95deg);
+			bottom: -70px;
+			right: 45px;
+		}
+	}
+	&__images {
+		display: flex;
+		column-gap: 20px;
+		position: relative;
+		&::before {
+			content: "";
+			width: 340px;
+			height: 340px;
+			border-radius: 340px;
+			background: #4dbb9a;
+			filter: blur(137px);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: -1;
+			transform: translate(-50%, -50%);
+		}
+		&-item {
+			display: inline-block;
+			width: 202px;
+			height: 466px;
+			border-radius: 110px;
+			object-fit: cover;
+			&:nth-child(2) {
+				margin-top: 77px;
+			}
+		}
+	}
+}

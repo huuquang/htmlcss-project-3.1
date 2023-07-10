@@ -1,0 +1,94 @@
+/*=============== HEADER ===============*/
+.header {
+	position: sticky;
+	top: -15px;
+	left: 0;
+	z-index: 10;
+	padding-top: 14px;
+	font-family: var(--secondery-font);
+	transition: 0.5s;
+	background: var(--body-color);
+}
+.nav {
+	display: flex;
+	align-items: center;
+	// justify-content: space-between;
+
+	height: var(--header-height);
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 1px;
+		background: linear-gradient(
+			18deg,
+			#fff 0%,
+			#dddcdc 51.25%,
+			rgba(212, 212, 212, 0) 100%
+		);
+	}
+	&__menu {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+	}
+	&__list {
+		display: flex;
+		column-gap: 1.8rem;
+		margin-right: 8.8rem;
+	}
+	&__link {
+		color: var(--text-color-black-gray);
+		font-size: inherit;
+		line-height: 1.5;
+		padding: 4px 10px 32px;
+		position: relative;
+		&:hover {
+			text-shadow: 1px 0 0 currentColor;
+			color: var(--primary-color-black);
+			&::after {
+				width: 16px;
+			}
+		}
+		&::after {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			bottom: 0;
+			left: 10px;
+			width: 0;
+			height: 2px;
+			z-index: 10;
+			background: var(--primary-color-green-black);
+			transition: all 0.3s linear;
+		}
+	}
+	&__toggle {
+		display: none;
+	}
+}
+/* Active link */
+.active-link {
+	text-shadow: 1px 0 0 currentColor;
+	color: var(--primary-color-black);
+	position: relative;
+	&::before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+		left: 10px;
+		z-index: 10;
+		width: 16px;
+		height: 2px;
+		background: var(--primary-color-green-black);
+	}
+}
+/* Change background header */
+.scroll-header {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,64 @@
+/*=============== TESTIMONIAL ===============*/
+.testimonial {
+	padding: 100px 0 84px;
+	&__title {
+		margin: 0 auto;
+		max-width: 520px;
+		text-align: center;
+		font-size: var(--h2-font-size);
+		font-weight: 600;
+	}
+	&__desc {
+		margin: 20px auto 0;
+		max-width: 547px;
+		text-align: center;
+		font-size: var(--small-font-size);
+		line-height: 1.625;
+	}
+	&__list {
+		margin-top: 103px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 45px;
+	}
+	&-item {
+		padding: 0 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 350px;
+		height: 362px;
+		background: var(--body-color);
+		border-radius: 160px;
+		border: 1.5px solid #cecece;
+		transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+		cursor: pointer;
+		position: relative;
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 100%;
+			height: 130px;
+			background: transparent;
+			position: absolute;
+			left: 0;
+			bottom: -59px;
+		}
+		&:hover {
+			margin-top: -59px;
+			box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+		}
+		&__title {
+			margin-top: 26px;
+			font-size: var(--h3-normal-font-size);
+			font-weight: 600;
+		}
+		&__desc {
+			margin-top: 9px;
+			text-align: center;
+			font-size: var(--smaller-font-size);
+			line-height: 1.71;
+		}
+	}
+}

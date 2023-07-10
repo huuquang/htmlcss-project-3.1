@@ -1329,7 +1329,7 @@ button {
     top: calc(var(--header-height) + 1.6rem);
   }
   .feature__video {
-    background: url(/assets/img/feature-video.jpg) center/cover no-repeat;
+    background: url(../../img/feature-video.jpg) center/cover no-repeat;
     width: 100%;
   }
   /* Active link */

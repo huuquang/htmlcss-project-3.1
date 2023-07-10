@@ -202,7 +202,6 @@ button {
 .swiper-button-prev .control__prev-icon {
   width: 50%;
   height: 50%;
-  transform: rotate(180deg);
 }
 
 /*=============== HEADER ===============*/
@@ -1329,8 +1328,7 @@ button {
     top: calc(var(--header-height) + 1.6rem);
   }
   .feature__video {
-    background: #000;
-    background: url(../../img/feature-video.jpg) center/cover no-repeat;
+    background: url(/assets/img/feature-video.jpg) center/cover no-repeat;
     width: 100%;
   }
   /* Active link */
@@ -1427,6 +1425,24 @@ button {
   /*======== SERVICES ========*/
   .service .service-top__control {
     margin: 0;
+  }
+  .service__content {
+    padding: 0px 49px 2px;
+    position: relative;
+  }
+  /* #region =============== CUSTOM SWIPER =============== */
+  .control {
+    position: static;
+  }
+  .control__btn {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
   }
   /*======== FEATURE ========*/
   .feature__line:first-child {

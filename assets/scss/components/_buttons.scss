@@ -46,8 +46,14 @@
 		&::after {
 			display: none;
 		}
-	}
-	&.control__icon {
+		&:first-child {
+			position: absolute;
+			left: -64px;
+		}
+		&:last-child{
+			position: absolute;
+			right: -64px;
+		}
 	}
 }
 /*=============== CUSTOM SWIPER ===============*/

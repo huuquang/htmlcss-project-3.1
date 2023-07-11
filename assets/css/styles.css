@@ -569,6 +569,7 @@ button {
 }
 .about__media {
   position: relative;
+  margin-right: 15px;
 }
 .about__line {
   position: absolute;
@@ -932,8 +933,9 @@ button {
 .testimonial__list {
   margin-top: 103px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 45px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 45px;
+  justify-items: center;
 }
 .testimonial-item {
   padding: 0 40px;

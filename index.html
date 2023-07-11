@@ -94,36 +94,40 @@
 	<body>
 		<!--=============== HEADER ===============-->
 		<header class="header" id="header">
-			<div class="nav container">
-				<a href="/" class="nav__logo">
-					<img src="./assets/icon/logo.svg" alt="MODULARS" />
-				</a>
-				<nav class="nav__menu" id="nav-menu">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a href="#home" class="nav__link active-link">Home</a>
-						</li>
-						<li class="nav__item">
-							<a href="#service" class="nav__link">Service</a>
-						</li>
-						<li class="nav__item">
-							<a href="#about" class="nav__link">About</a>
-						</li>
-						<li class="nav__item">
-							<a href="#blog" class="nav__link">Blog</a>
-						</li>
-						<li class="nav__item">
-							<a href="#contact" class="nav__link">Contact</a>
-						</li>
-					</ul>
-				</nav>
-				<a href="#!" class="button header__btn">Sign Up</a>
-				<div class="nav__toggle" id="nav-toggle">
-					<i class="bx bx-menu nav__toggle-menu"></i>
-					<i class="bx bx-x nav__toggle-close"></i>
+			<div class="header__color">
+				<div class="nav container">
+					<a href="/" class="nav__logo">
+						<img src="./assets/icon/logo.svg" alt="MODULARS" />
+					</a>
+					<nav class="nav__menu" id="nav-menu">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#home" class="nav__link active-link">Home</a>
+							</li>
+							<li class="nav__item">
+								<a href="#service" class="nav__link">Service</a>
+							</li>
+							<li class="nav__item">
+								<a href="#about" class="nav__link">About</a>
+							</li>
+							<li class="nav__item">
+								<a href="#blog" class="nav__link">Blog</a>
+							</li>
+							<li class="nav__item">
+								<a href="#contact" class="nav__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="#!" class="button header__btn">Sign Up</a>
+					<div class="nav__toggle" id="nav-toggle">
+						<i class="bx bx-menu nav__toggle-menu"></i>
+						<i class="bx bx-x nav__toggle-close"></i>
+					</div>
+					<div class="overlay" id="overlay"></div>
 				</div>
 			</div>
 		</header>
+		<!--=============== MAIN ===============-->
 		<main class="main">
 			<!--=============== HERO ===============-->
 			<section class="hero" id="home">
@@ -567,7 +571,7 @@
 				</div>
 			</section>
 			<!--=============== TESTIMONIAL ===============-->
-			<section class="testimonial" id="blog">
+			<section class="testimonial">
 				<div class="testimonial__container container">
 					<h2 class="testimonial__title section__title">
 						Share the features that help your customers
@@ -622,7 +626,7 @@
 				</div>
 			</section>
 			<!--=============== BLOG ===============-->
-			<section class="blog" id="contact">
+			<section class="blog" id="blog">
 				<div class="blog__container container">
 					<div class="blog__data">
 						<div class="blog__header">

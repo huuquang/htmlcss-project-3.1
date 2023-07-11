@@ -1,18 +1,26 @@
-/*=============== SHOW MENU ===============*/
-const showMenu = (toggleId, navId) => {
-	const toggle = document.getElementById(toggleId),
-		nav = document.getElementById(navId);
+/*=============== SHOW/HIDE SCROLL ===============*/
+const body = document.querySelector("body");
 
+function toggleScroll() {
+	body.classList.toggle("hide-scroll");
+}
+/*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId, overlayId) => {
+	const toggle = document.getElementById(toggleId),
+		nav = document.getElementById(navId),
+		overlay = document.getElementById(overlayId);
 	// Validate that variables exist
-	if (toggle && nav) {
+	if (toggle && nav && overlay) {
 		toggle.addEventListener("click", () => {
 			// We add the show-menu class to the div tag with the nav__menu class
 			nav.classList.toggle("show-menu");
+			overlay.classList.toggle("show-overlay");
+			toggleScroll();
 		});
 	}
 };
 
-showMenu("nav-toggle", "nav-menu");
+showMenu("nav-toggle", "nav-menu", "overlay");
 
 /*=============== CHANGE ICON ===============*/
 const changeIcon = (icon) => {
@@ -27,15 +35,20 @@ const changeIcon = (icon) => {
 changeIcon("nav-toggle");
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll(".nav__link");
+const overLay = document.querySelectorAll(".overlay");
 
 function linkAction() {
 	const navMenu = document.getElementById("nav-menu");
 	const navToggle = document.getElementById("nav-toggle");
+	const overlay = document.getElementById("overlay");
 	// When we click on each nav__link, we remove the show-menu class
 	navMenu.classList.remove("show-menu");
 	navToggle.classList.remove("change-icon");
+	overlay.classList.remove("show-overlay");
+	toggleScroll();
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
+overLay.forEach((n) => n.addEventListener("click", linkAction));
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll("section[id]");
@@ -60,6 +73,7 @@ function scrollActive() {
 	});
 }
 window.addEventListener("scroll", scrollActive);
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
 	const nav = document.getElementById("header");
